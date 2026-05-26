@@ -1,0 +1,25 @@
+:root{
+    --light: #20202A;
+    --dark: #16161C;
+    --grad: linear-gradient(to right, #00FF88, #6C3BFF);
+    --purple: #6C3BFF;
+    --green: #00FF88;
+    --btn-color: #1D1D1D;
+    --white: #FFF3F3;
+    --black: black;
+    --gray: #D6D6D6;
+    --non-active-color: #B4B4B4;
+    --m-radius: 20px;
+    --s-radius: 10px;
+    --circle: 50%;
+    --section-gap: 150px;
+    --h1: 5vw;
+    --p: 2vw;
+    --p-font: "Science Gothic Light", sans-serif;
+    --h-font: "Russo One", sans-serif;
+    --sub-font: "Science Gothic Semibold", sans-serif;
+    --small-p: 24px;
+    --nav: 1vw;
+    --pads: 100px;
+    --nav-gap: 50px;
+}

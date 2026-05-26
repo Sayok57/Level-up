@@ -1,0 +1,22 @@
+/* Russo One */
+@font-face {
+  font-family: 'Russo One';
+  src: url('../assets/fonts/RussoOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Science Gothic Light';
+  src: url('../assets/fonts/ScienceGothic-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Science Gothic Semibold';
+  src: url('../assets/fonts/ScienceGothic-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
