@@ -1,7 +1,7 @@
 :root{
     --light: #20202A;
     --dark: #16161C;
-    --grad: linear-gradient(to right, #00FF88, #6C3BFF);
+    --grad: linear-gradient(to bottom, #00FF88, #6C3BFF);
     --purple: #6C3BFF;
     --green: #00FF88;
     --btn-color: #1D1D1D;
@@ -13,10 +13,10 @@
     --s-radius: 10px;
     --circle: 50%;
     --section-gap: 150px;
-    --h1: 5vw;
+    --h1: 5.5vw;
     --p: 2vw;
     --h2: 4vw;
-    --h3: 3vw;
+    --h3: 2.5vw;
     --small: 1.2vw;
     --p-font: "Science Gothic Light", sans-serif;
     --h-font: "Russo One", sans-serif;
