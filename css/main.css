@@ -10,7 +10,7 @@ body{
     @media (max-width: 1200px){
         gap: 40px;
     };
-    @media(max-width: 800px){
+    @media(max-width: 1000px){
         min-height: 100vh;
         justify-content: space-between;
     }
@@ -527,9 +527,13 @@ footer{
 }
 .device-selector p{
     font-size: var(--small);
+    color: var(--non-active-color);
     @media (max-width: 800px){
         font-size: var(--p);
     }
+}
+.device-selector p:is(.active){
+    color: var(--white);
 }
 .device-selector p:is(.active){
     text-decoration-line: underline;
@@ -835,4 +839,202 @@ footer{
 }
 .pr5{
     width: 60vw;
+}
+/* partners */
+.main-screen:has(.partners-section-container){
+    align-items: flex-start;
+    gap: 32px;
+    @media(max-width: 830px){
+        gap: 10px;
+    }
+}
+.partners-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.partners-img-container p{
+    align-self: center;
+}
+.partners-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+    height: 30vw;
+    padding: 40px;
+    background-color: gray;
+    @media(max-width: 830px){
+        padding: 10px;
+    }
+}
+.partners-content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: var(--section-gap) 0 0 0;
+    @media(max-width: 830px){
+        gap: 10px;
+        padding-top: 40px;
+    }
+}
+.partners-content-text-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.partners-content-text-container a{
+    color: var(--non-active-color);
+    font-size: var(--h2);
+}
+.partners-content-text-container p{
+    color: var(--non-active-color);
+    font-size: var(--h2);
+}
+.partners-content-text-container a:is(.active){
+    color: var(--white);
+}
+.partners-content-box{
+    padding-left: var(--pads);
+    padding-right: var(--pads);
+    width: 100%;
+    background-color: var(--purple);
+    @media(max-width: 830px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.partners-content{
+    width: 100%;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    @media(max-width: 830px){
+        gap: 10px;
+    }
+}
+.content-selector{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 40px 0 40px;
+    @media(max-width: 830px){
+        gap: 5px;
+    }
+}
+.content-selector a{
+    color: var(--non-active-color);
+}
+.content-selector a:is(.active){
+    color: var(--white);
+}
+.content-preview{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 60px;
+    @media(max-width: 830px){
+        padding-bottom: 10px;
+    }
+} 
+.content-preview h3{
+    text-align: center;
+    font-size: var(--p);
+}
+.more-btn p{
+    font-family: var(--p-font);
+}
+.test-img6{
+    width: 10vw;
+    height: 20vw;
+    background-color: gray;
+}
+.opposite{
+    transform: rotate(180deg);
+}
+.arrow{
+    transform: scale(0.5);
+    @media(max-width: 1200px){
+        transform: scale(0.3);
+    }
+    @media(max-width: 830px){
+        transform: scale(0.2);
+    }
+    @media(max-width: 500px){
+        transform: scale(0.15);
+    }
+}
+/*hover animations */
+.classic-btn:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+    background: var(--grad);
+}
+nav a:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+    color: var(--green);
+}
+.main-devices-card:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+}
+.main-devices-card{
+    cursor: pointer;
+}
+.search:hover{
+    transition: none;
+    transform: none;
+    background: var(--btn-color);
+}
+.store-header-text-container a:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+    color: var(--green);
+}
+.partners-content-text-container a:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+    color: var(--green);
+}
+.device-selector p{
+    cursor: pointer;
+}
+.content-selector p{
+    cursor: pointer;
+}
+.device-selector p:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+    color: var(--green);
+}
+.content-selector a:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
+    color: var(--green);
+}
+.scroll-btn{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.scroll-btn:hover{
+    opacity: 1;
+    transition: 0.15s;
+}   
+.prons:hover{
+    background-color: var(--green);
+    transition: 0.15s;
+}
+.prons:hover p{
+    color: var(--black);
+}
+.advantages-card:hover{
+    transition: 0.15s;
+    transform: scale(1.05);
 }
