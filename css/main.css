@@ -8,7 +8,7 @@ body{
     justify-content: center;
     overflow-x: hidden;
     @media (max-width: 1200px){
-        gap: 10px;
+        gap: 40px;
     };
 }
 small{
@@ -160,6 +160,9 @@ nav a:is(.active){
     width: fit-content;
     gap: 5px;
     background: var(--btn-color);
+    border: 1px solid transparent;
+    border-image: var(--grad);
+    border-image-slice: 1;
     align-items: center;
     justify-content: center;
     padding: 20px 30px 20px 30px;
@@ -175,22 +178,6 @@ nav a:is(.active){
      @media(max-width: 850px){
         width: 10px;
     };
-}
-.classic-btn::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 40px;
-    border-radius: var(--s-radius);
-    background: var(--grad);
-    z-index: -1;
-    padding: 32px;
-    @media(max-width: 850px){
-        padding: 15px;
-    };
-     @media(max-width: 600px){
-        padding: 10px;
-    }
 }
 .classic-btn p{
     font-family: var(--sub-font);
@@ -247,7 +234,7 @@ nav a:is(.active){
         padding: 20px;
         height: 24vw;
     }
-    @media(max-width: 400px){
+    @media(max-width: 500px){
         height: 40vw;
         padding: 20px;
     }
@@ -331,4 +318,133 @@ footer{
     font-size: var(--small);
     color: var(--gray);
     font-family: var(--p-font);
+}
+
+/* about us styles */
+
+.advantages-section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 150px;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1200px){
+        gap: 40px;
+        padding-top: 40px;
+    }
+    @media (max-width: 750px){
+        gap: 20px;
+        padding-top: 20px;
+    }
+}
+.advantages-section h2{
+    text-align: center;
+}
+.advantages-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.advantages-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--btn-color);
+    @media (max-width: 1200px){
+        padding: 20px;
+    }
+    @media (max-width: 750px){
+        padding: 5px;
+    }
+}
+.advantages-card p{
+    font-size: var(--nav);
+    color: var(--green);
+}
+.ratings-section{
+    margin-top: 200px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--purple);
+    width: 100%;
+    @media (max-width: 1200px){
+        margin-top: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.ratings-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: var(--pads);
+    @media (max-width: 1200px){
+        gap: 16px;
+    }
+     @media (max-width: 1200px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.ratings-card-box{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    @media (max-width: 1200px){
+        gap: 10px;
+    }
+}
+.flex{
+    display: flex;
+}
+.star{
+    @media(max-width: 1200px){
+        width: 20px;
+    }
+    @media(max-width: 800px){
+        width: 10px;
+    }
+}
+.rating-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media (max-width: 1200px){
+        gap: 5px;
+    }
+}
+.rating{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 30vw;
+    border-radius: var(--m-radius);
+    background-color: var(--dark);
+    @media (max-width: 1200px){
+        padding: 15px;
+        gap: 5px;
+    }
+    @media (max-width: 750px){
+        border-radius: var(--s-radius);
+        padding: 8px;
+    }
+}
+.test-img4{
+    width: 10vw;
+    height: 10vw;
+    background-color: gray;
+}
+.rate-btn{
+    margin-left: var(--pads);
+    margin-top: 40px;
+    @media(max-width: 1200px){
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
