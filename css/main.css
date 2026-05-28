@@ -774,7 +774,7 @@ footer{
     padding-left: var(--pads);
     @media(max-width: 830px){
         padding-left: 20px;
-        padding-right: 420px;
+        padding-right: 20px;
     }
 }
 .prons-section .classic-btn{
@@ -793,6 +793,9 @@ footer{
     width: 100%;
     @media(max-width: 830px){
         gap: 16px;
+    }
+    @media(max-width: 500px){
+        padding-right: 0px;
     }
 }
 .prons{
