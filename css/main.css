@@ -163,6 +163,15 @@ nav a:is(.active){
         height: 20vw;
     }
 }
+.hero-img{
+    height: 30vw;
+    @media(max-width: 860px){
+        height: 20vw;
+    }
+}
+.main-events-img{
+    height: 40vw;
+}
 .classic-btn{
     display: flex;
     position: relative;
@@ -206,9 +215,8 @@ nav a:is(.active){
 }
 .main-devices-container{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     background-color: var(--purple);
     width: 100%;
@@ -217,11 +225,10 @@ nav a:is(.active){
         padding: 60px 40px 60px 40px;
     }
     @media(max-width: 830px){
-        padding: 20px 0 20px 0;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
         position: relative;
         overflow-x: scroll;
+        padding: 20px 0 20px 0;
+        justify-content: space-evenly;
     }
 }
 .main-devices-section h2{
@@ -230,11 +237,16 @@ nav a:is(.active){
         padding-left: 20px;
     }
 }
+.main-card-img{
+    align-self: center;
+    width: 12vw;
+}
 .main-devices-card{
-    height: 30vw;
+    height: 26vw;
     background-color: var(--dark);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     padding: 40px;
     border-radius: var(--m-radius);
@@ -244,8 +256,9 @@ nav a:is(.active){
         height: 24vw;
     }
     @media(max-width: 500px){
-        height: 40vw;
-        padding: 20px;
+        height: 32vw;
+        padding: 0 10px 0 10px;
+        border-radius: var(--s-radius);
     }
 }
 .test-img2{
@@ -513,7 +526,7 @@ footer{
 .search::placeholder{
     font-size: var(--small);
     font-family: var(--p-font);
-    color: var(--white);
+    color: var(--gray);
     @media (max-width: 800px){
         font-size: var(--p);
     }
@@ -982,8 +995,12 @@ nav a:hover{
     color: var(--green);
 }
 .main-devices-card:hover{
+    background-color: var(--green);
     transition: 0.15s;
     transform: scale(1.05);
+}
+.main-devices-card:hover p{
+    color: var(--black);
 }
 .main-devices-card{
     cursor: pointer;
@@ -1038,3 +1055,4 @@ nav a:hover{
     transition: 0.15s;
     transform: scale(1.05);
 }
+
