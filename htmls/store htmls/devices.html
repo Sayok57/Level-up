@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Девайсы</title>
     <link rel = "stylesheet" href="../../css/style.css">
-    <script src="../../scirpts/script.js" defer></script>
+    <script src="../../scirpts/store.js" defer></script>
     <link rel="icon" href="../../assets/images/favicon levelUp.svg">
 </head>
 <body>
@@ -47,138 +47,16 @@
                 <input class="classic-btn search" placeholder="Поиск">
                 </input>
                 <div class="device-selector">
-                    <p class="active">Все</p>
-                    <p>Мыши</p>
-                    <p>Клавиатуры</p>
-                    <p>Гарнитуры</p>
-                    <p>Микрофоны</p>
-                    <p>Геймпады</p>
+                    <p class="deviceHref active" id="allid">Все</p>
+                    <p class="deviceHref" id="mouseid">Мыши</p>
+                    <p class="deviceHref" id="keyboardid">Клавиатуры</p>
+                    <p class="deviceHref" id="earphoneid">Гарнитуры</p>
+                    <p class="deviceHref" id="microphoneid">Микрофоны</p>
+                    <p class="deviceHref" id="gamepadid">Геймпады</p>
                 </div>
             </div>
             <div class="cards-global-container">
-                <div class="cards-container">
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                </div>
-                <div class="cards-container">
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                </div>
-                <div class="cards-container">
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                    <article class="card">
-                        <span class="card-text">
-                            <h3>Название</h3>
-                            <small>Модель</small>
-                        </span>
-                        <div class="test-img5"></div>
-                        <span class="card-text">
-                            <h4>000.00$</h4>
-                            <button class="classic-btn buy-btn">
-                                <p>Купить</p>
-                            </button>
-                        </span>
-                    </article>
-                </div>
+                <div class="cards-container"></div>
             </div>
         </section>
     </main>

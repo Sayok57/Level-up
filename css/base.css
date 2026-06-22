@@ -25,4 +25,8 @@
     --nav: 1.5vw;
     --pads: 100px;
     --nav-gap: 50px;
+    --fanzineGrad: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 225, 0));
+    --fanzineRed: rgb(164, 6, 6);
+    --fanzineYellow: rgb(255, 156, 64);
+    --fanzineBlack: rgb(8, 8, 8);
 }

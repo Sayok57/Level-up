@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сетапы</title>
     <link rel = "stylesheet" href="../../css/style.css">
-    <script src="../../scirpts/script.js" defer></script>
+    <script src="../../scirpts/storeSetup.js" defer></script>
     <link rel="icon" href="../../assets/images/favicon levelUp.svg">
 </head>
 <body>
@@ -48,28 +48,22 @@
             <div class="setup-container">
                 <article class="setup">
                     <span class="card-text">
-                        <h3>Название</h3>
-                        <small>Модель + Модель + Модель + Модель</small>
+                        <h3 id="setupName">Стартовый Набор</h3>
+                        <small id="setupModels">Мышь + Клавиатура + Гарнитура</small>
                     </span>
                     <div class="setup-img-container">
-                        <div class="adviser-img">
-                            <span class="adviser-text-container">
-                                <h3>Никнейм</h3>
-                                <h4>Рекомендует</h4>
-                            </span>
-                        </div>
-                        <div class="setup-img"></div>
+                        <div class="setup-img setup1"></div>
                     </div>
-                    <h4>000.00$</h4>
-                    <button class="classic-btn buy-btn">
+                    <h4 id = "setupPrice">129.99$</h4>
+                    <button class="classic-btn buy-btn" onclick="page404()">
                         <p>Купить</p>
                     </button>
                 </article>
                 <div class="switch-btns-container">
-                    <button class="switch-btn">
+                    <button class="switch-btn" id="switch-btn1">
                         <p>Пред.</p>
                     </button>
-                    <button class="switch-btn">
+                    <button class="switch-btn" id="switch-btn2">
                         <p>След.</p>
                     </button>
                 </div>

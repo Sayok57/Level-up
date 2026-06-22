@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Партнеры</title>
     <link rel = "stylesheet" href="../../css/style.css">
-    <script src="../../scirpts/script.js" defer></script>
+    <script src="../../scirpts/partners.js" defer></script>
     <link rel="icon" href="../../assets/images/favicon levelUp.svg">
+    <style>
+        body{
+            background-color: var(--fanzineBlack)
+        }
+        nav{
+            background-color: var(--fanzineRed);
+        }
+        footer{
+            background-color: var(--fanzineRed);
+        }
+        h1{
+            background: var(--fanzineGrad);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            display: inline-block;
+        }
+        .partners-content{
+            background: var(--fanzineRed);
+        }
+        .partners-content-box{
+            background: var(--fanzineYellow);
+        }
+        .classic-btn{
+            border: 1px solid transparent;
+            border-image: var(--fanzineGrad);
+            border-image-slice: 1;
+        }
+        nav a:hover{
+            transition: 0.15s;
+            transform: scale(1.05);
+            color: var(--fanzineYellow);
+        }
+        .partners-content-text-container a:hover{
+            transition: 0.15s;
+            transform: scale(1.05);
+            color: var(--fanzineYellow);
+        }
+        .content-selector a:hover{
+            transition: 0.15s;
+            transform: scale(1.05);
+            color: var(--fanzineYellow);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,15 +83,6 @@
             <div class="partners-section-container">
                 <h1>Наши Партнеры</h1>
                 <div class="partners-img-container">
-                    <p>Level Up x FanZine</p>
-                    <div class="scroll-segment-container">
-                        <div class="scroll-btn">
-                            <img class="arrow" src="../../assets/images/arroww.svg">
-                        </div>
-                        <div class="scroll-btn opposite">
-                            <img class="arrow" src="../../assets/images/arroww.svg">
-                        </div>
-                    </div>
                 </div>
             </div>
             <p>FanZine – единственная в России выставка спортивных журналов, фэнзинов и независимых изданий о спорте, гейминге и уличной культуре.
@@ -62,16 +98,15 @@
                 <div class="partners-content">
                     <div class="content-selector">
                         <p>|</p>
-                        <a class="active">Веб-плакат<a>
+                        <a class="hrefs active">Веб-плакат<a>
                         <p>|</p>
-                        <a>Айдентика</a>
+                        <a class="hrefs">Плакаты</a>
                         <p>|</p>
-                        <a>Постеры</a>
                     </div>
                     <div class="content-preview fanzine-web-plakat">
-                        <h3>Веб-плакат "FanZine"</h3>
-                        <div class="test-img6"></div>
-                        <a class="classic-btn more-btn" href="https://sayok57.github.io/FanZine1/" target="_blank">
+                        <h3 id="itemName">Веб-плакат "FanZine"</h3>
+                        <div class="test-img6 preview21"></div>
+                        <a class="classic-btn more-btn" id="itemHref" href="https://sayok57.github.io/FanZine1/" target="_blank">
                             <p>Подробнее</p>
                         </a>
                     </div>
